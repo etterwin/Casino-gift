@@ -2,84 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
 
+    <!-- style -->
+    <link href="css/style.css" rel="stylesheet" />
 
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    <!-- scripts and library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 
 </head>
 <body>
 
-<div class="wrapper">
+<header class="header">
 
-    <header class="header">
-
-        <section class="header__container">
+    <!-- Блок с логотипом и выбором языка -->
+    <section class="header__container">
+        <div class="header-wrapper">
             <a href="#" class="header-logo-link">
-                <img src="" class="header-logo" />
+                <img src="assets/pictures/png/Logo.png" class="header-logo" />
             </a>
 
             <div class="header__dropdown">
                 <label for="header-select" class="header-label"> </label>
                 <select id="header-select" class="header-list">
                     <option class="header-item" value="rus" selected>rus</option>
-                    <option class="header-item" value="eng" selected>eng</option>
+                    <option class="header-item" value="eng">eng</option>
                 </select>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="header__container">
+    <!-- Блок с мадам, текстом и кнопкой-якорем -->
+    <section class="header__container">
+        <div class="header-wrapper">
 
-            <div class="header-wrapper">
-                <h1 class="header-caption">
-                    Получите
-                    <span class="header-caption--bold">бесплатные</span>
-                    <span class="header-caption--big">бонусы</span>
-                    во
-                    <span class="header-caption--big">всех</span>
-                    казино!
-                </h1>
-                <p class="header-text">
-                    Также как
-                    <span class="header-text--yellow">кэшбек</span>
-                    мы
-                    <span class="header-text--yellow">сотрудничаем</span>
-                    с казино, которые
-                    <span class="header-text--yellow">эксклюзивно</span>
-                    предоставляют
-                    <span class="header-text--yellow">бонусы</span>
-                </p>
+            <h1 class="header-caption">
+                Получите
+                <span class="header-caption--bold">бесплатные</span>
+                <span class="header-caption--big">бонусы</span>
+                во
+                <span class="header-caption--big">всех</span>
+                <span class="header-caption--wide">казино!</span>
+            </h1>
+
+            <p class="header-text">
+                Также как
+                <span class="header-text--yellow">кэшбек</span>
+                мы
+                <span class="header-text--yellow">сотрудничаем</span>
+                с казино, которые
+                <span class="header-text--yellow">эксклюзивно</span>
+                предоставляют
+                <br/><span class="header-text--yellow">бонусы</span>
+            </p>
+
+            <div class="header-btn-wrapper">
+                <a href="" class="header-btn">Получить бонус!</a>
             </div>
 
-            <a href="" class="header-btn">Получить бонус!</a>
+        </div>
+    </section>
 
-        </section>
+</header>
 
-    </header>
+<div class="wrapper">
 
     <div class="container">
 
         <h2 class="container-caption">Как это работает?</h2>
 
         <section class="box">
-            <img src="" class="box-img" />
+            <img src="assets/pictures/png/body_one_1.png" class="box-img" />
             <p class="box-text">Вам доступно
                 <span class="box-text--yellow">бесплатное вращение</span></p>
         </section>
 
         <section class="box">
-            <img src="" class="box-img" />
-            <p class="box-text">После вращения вы получаете один случайный бонус, которым можно воспользоваться</p>
+            <img src="assets/pictures/png/body_one_2.png" class="box-img" />
+            <p class="box-text">После
+                <span class="box-text--yellow">вращения</span>
+                вы получаете один
+                <span class="box-text--yellow">случайный бонус</span>
+                , которым можно воспользоваться</p>
         </section>
 
         <section class="box">
-            <img src="" class="box-img" />
-            <p class="box-text">Вам доступно
-                <span class="box-text--yellow">бесплатное вращение</span></p>
+            <img src="assets/pictures/png/body_one_3.png" class="box-img" />
+            <p class="box-text">Для
+                <span class="box-text--yellow">повторного вращения</span>
+                вам нужно
+                <span class="box-text--yellow">зарегестрироваться</span></p>
         </section>
 
     </div>
@@ -87,19 +102,19 @@
     <div class="container">
 
         <section class="box">
-            <img src="" class="box-icon" />
+            <img src="assets/pictures/svg/medal-of-award.svg" class="box-icon" />
             <h3 class="box-caption">Бонусы</h3>
             <p class="box-text">223,579</p>
         </section>
 
         <section class="box">
-            <img src="" class="box-icon" />
+            <img src="assets/pictures/svg/male-user-shadow.svg" class="box-icon" />
             <h3 class="box-caption">Пользователей</h3>
             <p class="box-text">223,579</p>
         </section>
 
         <section class="box">
-            <img src="" class="box-icon" />
+            <img src="assets/pictures/svg/icon.svg" class="box-icon" />
             <h3 class="box-caption">Онлайн</h3>
             <p class="box-text">1062</p>
         </section>
@@ -109,7 +124,7 @@
     <div class="container">
 
         <section class="box">
-            <img src="" class="box-icon" />
+            <img src="assets/pictures/svg/security-shield.svg" class="box-icon" />
             <h3 class="box-caption">Безопасно</h3>
             <p class="box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus enim augue, pretium sit amet libero et, congue dignissim nisi. </p>
         </section>
@@ -121,7 +136,7 @@
         </section>
 
         <section class="box">
-            <img src="" class="box-icon" />
+            <img src="assets/pictures/svg/speedometer.svg" class="box-icon" />
             <h3 class="box-caption">Моментально</h3>
             <p class="box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus enim augue, pretium sit amet libero et, congue dignissim nisi. </p>
         </section>
