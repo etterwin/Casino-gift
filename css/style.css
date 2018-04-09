@@ -149,7 +149,7 @@ body {
   font-size: 15px;
   font-family: "MyriadPro Bold", sans-serif;
   text-transform: uppercase;
-  color: #0c0c0c;
+  color: #05050f;
   background: #f2cd38;
   background: -moz-linear-gradient(top, #ffe100 0%, #ffce00 489%, #ffac00 50%, #ff9000 100%);
   background: -webkit-linear-gradient(top, #ffe100 0%, #ffce00 49%, #ffac00 50%, #ff9000 100%);
@@ -197,6 +197,7 @@ body {
     font-family: "MyriadPro Semibold", sans-serif; }
   .container:nth-child(2) {
     position: relative;
+    padding: 5px 0;
     width: 100%;
     background: #f2cd38;
     background: -moz-linear-gradient(top, #dfb845 0%, #dfb73f 50%, #dfb845 100%);
@@ -206,11 +207,39 @@ body {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around; }
+    .container:nth-child(2):before {
+      position: absolute;
+      content: '';
+      top: -25px;
+      left: -200px;
+      width: 400px;
+      height: 50px;
+      background: url("../assets/pictures/png/blue alpha-02.png") no-repeat 0 0;
+      background-size: 100%; }
+    .container:nth-child(2):after {
+      position: absolute;
+      content: '';
+      bottom: -25px;
+      right: -200px;
+      width: 400px;
+      height: 50px;
+      background: url("../assets/pictures/png/blue alpha-02.png") no-repeat 0 0;
+      background-size: 100%; }
   .container:nth-child(2) .box {
-    width: 25%; }
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .container:nth-child(2) .box .box-icon {
-    max-width: 15px; }
+    max-width: 13px;
+    margin-bottom: 5px; }
   .container:nth-child(2) .box .box-caption, .container:nth-child(2) .box .box-text {
-    color: black; }
+    color: #05050f;
+    text-transform: uppercase; }
+  .container:nth-child(2) .box .box-caption {
+    font-size: 14px;
+    font-family: "MyriadPro Regular", sans-serif; }
+  .container:nth-child(2) .box .box-text {
+    font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */
