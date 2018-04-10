@@ -32,7 +32,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #f1cb36;
+  color: #edb92b;
   font-family: 'MyriadPro Regular', sans-serif;
   cursor: default;
   text-decoration: none;
@@ -411,7 +411,7 @@ input {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 2px solid #ffe100;
+  border: 2px solid #edb92b;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -483,7 +483,7 @@ input {
   display: inline-block;
   width: 10px;
   height: 10px;
-  border: 2px solid #ffe100;
+  border: 2px solid #edb92b;
   -webkit-transform: translateZ(0);
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -491,15 +491,146 @@ input {
   transition: all 0.5s ease-out; }
 
 #active label:hover {
-  background: #ffe100;
-  border: 2px solid #ffe100; }
+  background: #edb92b;
+  border: 2px solid #edb92b; }
 
 #slide1:checked ~ #active label:nth-child(1),
 #slide2:checked ~ #active label:nth-child(2),
 #slide3:checked ~ #active label:nth-child(3) {
-  background: #ffe100;
-  border: 2px solid #ffe100; }
+  background: #edb92b;
+  border: 2px solid #edb92b; }
 
 /*end*/
+/*next main*/
+.main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.roulette {
+  background: url("../assets/pictures/png/city.png") no-repeat 50% 50%;
+  background-size: cover;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.roulette .roulette-caption {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "MyriadPro Bold", sans-serif; }
+
+.main-btn-wrapper {
+  position: relative;
+  width: 230px;
+  height: 45px;
+  margin-top: 20px; }
+  .main-btn-wrapper:before {
+    position: absolute;
+    content: '';
+    width: 234px;
+    height: 49px;
+    top: -2px;
+    left: -2px;
+    z-index: 1;
+    border-radius: 15px;
+    background: #f2cd38;
+    background: -moz-linear-gradient(top, #ffdc00 49%, #ffc300 50%);
+    background: -webkit-linear-gradient(top, #ffdc00, #ffc300 50%);
+    background: linear-gradient(to bottom, #ffdc00 49%, #ffc300 50%); }
+
+.main-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  border-radius: 14px;
+  font-size: 20px;
+  font-family: "MyriadPro Bold", sans-serif;
+  text-transform: uppercase;
+  color: #05050f;
+  background: #f2cd38;
+  background: -moz-linear-gradient(top, #ffe100 0%, #ffce00 489%, #ffac00 50%, #ff9000 100%);
+  background: -webkit-linear-gradient(top, #ffe100 0%, #ffce00 49%, #ffac00 50%, #ff9000 100%);
+  background: linear-gradient(to bottom, #ffe100 0%, #ffce00 49%, #ffac00 50%, #ff9000 100%); }
+
+.roulette__container:nth-child(2) {
+  width: 300px;
+  height: 50px; }
+.roulette__container:nth-child(4) {
+  width: 300px;
+  height: 150px;
+  padding: 10px;
+  background: #f4da7d;
+  background: -moz-linear-gradient(left, #f4da7d 0%, #ecb931 50%, #f4da7d 100%);
+  background: -webkit-linear-gradient(left, #f4da7d 0%, #ecb931 50%, #f4da7d 100%);
+  background: linear-gradient(to right, #f4da7d 0%, #ecb931 50%, #f4da7d 100%);
+  -webkit-box-shadow: 0 0 30px 5px rgba(55, 45, 95, 0.5);
+  -moz-box-shadow: 0 0 30px 5px rgba(55, 45, 95, 0.5);
+  box-shadow: 0 0 30px 5px rgba(55, 45, 95, 0.5); }
+
+.roulette__box {
+  width: 100%;
+  height: 130px;
+  background: #313131;
+  background: -moz-linear-gradient(top, #313131 0%, #363636 50%, #313131 100%);
+  background: -webkit-linear-gradient(top, #313131 0%, #363636 50%, #313131 100%);
+  background: linear-gradient(to top, #313131 0%, #363636 50%, #313131 100%); }
+
+.main__container {
+  position: relative;
+  padding: 15px;
+  width: 234px;
+  border: 2px solid #edb92b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px auto 50px; }
+
+.main-text {
+  font-size: 20px; }
+  .main-text:nth-child(3) {
+    margin: 15px auto 35px; }
+
+.main-caption {
+  font-family: "MyriadPro Bold", sans-serif;
+  font-size: 26px; }
+
+.main-img-wrapper {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  bottom: -40px;
+  left: calc(50% - 40px); }
+
+.main-img {
+  width: 100%; }
+
+.footer {
+  width: 100%;
+  margin: 20px 0 0;
+  padding: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.footer-text,
+.footer-link {
+  font-size: 12px; }
+
+.footer-link {
+  margin-top: 15px;
+  text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */
