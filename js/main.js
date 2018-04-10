@@ -1,9 +1,9 @@
 // Функция заполнения и определения геопозиции
 $(document).ready(function () {
 
-    $("#header-select").on("change", function (event) { // Если язык был изменен вручную
+    $('#header-select').on("change", function (event) { // Если язык был изменен вручную
 
-        let valueSelect = $("#header-select option:selected").attr('value'); // Берем value выбранного select
+        let valueSelect = $('#header-select option:selected').attr('value'); // Берем value выбранного select
 
         if (valueSelect === 'rus') { // Если оно rus
             $('.header-item:eq(0)').attr('selected', true);
@@ -48,9 +48,11 @@ $(document).ready(function () {
 
 });
 
+//----------------------------------------------------------------------------------------------------------------------
+
 // Скролл к якорю
 $(document).ready(function () {
-    $("#start").click(function () {
+    $('#start').click(function () {
         let elementClick = $(this).attr("href"); // Берем значение атрибута href
         let destination = $(elementClick).offset().top; // И скроллим страницу к нему
         $('html').animate({
@@ -60,6 +62,8 @@ $(document).ready(function () {
         return false;
     });
 });
+
+//----------------------------------------------------------------------------------------------------------------------
 
 // Прибавление к числу
 $(document).ready(function () {
@@ -100,10 +104,12 @@ $(document).ready(function () {
         }
         else { // Если счетчик не четный, то функция разницы
             num_3 = num_3 - setInterval(function (min, max) {
-                return Math.floor(Math.random() * (max - min + 15)) + 1;
+                return Math.floor(Math.random() * (max - min + 10)) + 1;
             }, 1000);
             $('#num_3').text(num_3);
         }
     }, 3000);
 
 });
+
+//----------------------------------------------------------------------------------------------------------------------
