@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <!-- style -->
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <!-- scripts and library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+<header class="header-next">
+
+    <!-- Блок с логотипом и выбором языка -->
+    <section class="header__container">
+        <div class="header-wrapper">
+            <a href="#" class="header-logo-link">
+                <img src="assets/pictures/png/Logo.png" class="header-logo"/>
+            </a>
+
+            <!-- Выпадающий список с выбором языков -->
+            <div class="header__dropdown">
+                <label for="header-select" class="header-label">
+                    <img src="" id="flag" class="header-icon"/>
+                </label>
+                <select id="header-select" class="header-list">
+                    <option class="header-item" value="rus">rus</option>
+                    <option class="header-item" value="deu">deu</option>
+                    <option class="header-item" value="ita">ita</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+</header>
+
+<div class="wrapper"></div>
+
+</body>
+</html>

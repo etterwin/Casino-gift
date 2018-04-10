@@ -106,6 +106,22 @@ body {
   }
 }
 
+.header-next {
+  width: 100%;
+  background: #1e1c42;
+}
+
+.header-next .header__container .header-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header-logo,
 .header-logo-link {
   max-height: 20px;
