@@ -144,6 +144,7 @@ body {
   outline: none;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .header-item {
@@ -151,6 +152,7 @@ body {
   outline: none;
   border: none;
   background: #161522;
+  cursor: pointer;
 }
 
 .header-caption {
@@ -197,6 +199,7 @@ body {
 }
 
 .header-btn-wrapper {
+  cursor: pointer;
   position: relative;
   width: 160px;
   height: 45px;
@@ -217,6 +220,7 @@ body {
 }
 
 .header-btn {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -383,6 +387,7 @@ body {
 }
 
 .container-btn-wrapper {
+  cursor: pointer;
   position: relative;
   width: 230px;
   height: 65px;
@@ -403,6 +408,7 @@ body {
 }
 
 .container-btn {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -621,6 +627,7 @@ input {
 }
 
 .main-btn-wrapper {
+  cursor: pointer;
   position: relative;
   width: 230px;
   height: 45px;
@@ -642,6 +649,7 @@ input {
 }
 
 .main-btn {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -676,19 +684,79 @@ input {
     background: -moz-linear-gradient(left, rgba(244,218,125,1) 0%, rgba(236,185,49,1) 50%, rgba(244,218,125,1) 100%);
     background: -webkit-linear-gradient(left, rgba(244,218,125,1) 0%,rgba(236,185,49,1) 50%,rgba(244,218,125,1) 100%);
     background: linear-gradient(to right, rgba(244,218,125,1) 0%,rgba(236,185,49,1) 50%,rgba(244,218,125,1) 100%);
-    -webkit-box-shadow: 0 0 30px 5px rgba(55,45,95,0.5);
-    -moz-box-shadow: 0 0 30px 5px rgba(55,45,95,0.5);
-    box-shadow: 0 0 30px 5px rgba(55,45,95,0.5);
+    -webkit-box-shadow: 0 0 30px 0 rgba(130,48,241,.5);
+    -moz-box-shadow: 0 0 30px 0 rgba(130,48,241,.5);
+    box-shadow: 0 0 30px 0 rgba(130,48,241,.5);
   }
 }
 
-.roulette__box {
+.roulette-wrapper {
   width: 100%;
+  position: relative;
+  overflow: hidden;
   height: 130px;
   background: #313131;
   background: -moz-linear-gradient(top, #313131 0%, #363636 50%, #313131 100%);
   background: -webkit-linear-gradient(top, #313131 0%,#363636 50%,#313131 100%);
   background: linear-gradient(to top, #313131 0%, #363636 50%,#313131 100%);
+}
+
+.roulette-list {
+  width: 100%;
+  height: 130px;
+  margin-left: -50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.roulette-list .roulette-item {
+  &:nth-child(odd) {
+    min-width: 100px;
+    min-height: 100px;
+    background: url("../assets/pictures/png/casino_guide.png") no-repeat 50% 50%;
+    background-size: cover;
+    margin-right: 10px;
+  }
+  &:nth-child(even) {
+    position: relative;
+    min-width: 15px;
+    min-height: 15px;
+    background: #1e1e1e;
+    margin-right: 10px;
+    border-radius: 50%;
+    &:before {
+      position: absolute;
+      top: -45px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      content: '';
+      background: rgb(237,186,47);
+      background-image: -moz-radial-gradient(center, ellipse cover, rgba(237, 186, 47, 1) 0%, rgba(243, 209, 102, 1) 100%);
+      background: -webkit-radial-gradient(center, ellipse cover, rgba(237,186,47,1) 0%,rgba(243,209,102,1) 100%);
+      background: radial-gradient(ellipse at center, rgba(237,186,47,1) 0%,rgba(243,209,102,1) 100%);
+      -webkit-box-shadow: 0 0 20px 0 rgba(243,209,102,1);
+      -moz-box-shadow: 0 0 20px 0 rgba(243,209,102,1);
+      box-shadow: 0 0 20px 0 rgba(243,209,102,1);
+    }
+    &:after {
+      position: absolute;
+      bottom: -45px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      content: '';
+      background: rgb(237,186,47);
+      background-image: -moz-radial-gradient(center, ellipse cover, rgba(237, 186, 47, 1) 0%, rgba(243, 209, 102, 1) 100%);
+      background: -webkit-radial-gradient(center, ellipse cover, rgba(237,186,47,1) 0%,rgba(243,209,102,1) 100%);
+      background: radial-gradient(ellipse at center, rgba(237,186,47,1) 0%,rgba(243,209,102,1) 100%);
+      -webkit-box-shadow: 0 0 20px 0 rgba(243,209,102,1);
+      -moz-box-shadow: 0 0 20px 0 rgba(243,209,102,1);
+      box-shadow: 0 0 20px 0 rgba(243,209,102,1);
+    }
+  }
 }
 
 .main__container {

@@ -109,13 +109,15 @@ body {
 .header-list {
   outline: none;
   border: none;
-  background: transparent; }
+  background: transparent;
+  cursor: pointer; }
 
 .header-item {
   text-transform: uppercase;
   outline: none;
   border: none;
-  background: #161522; }
+  background: #161522;
+  cursor: pointer; }
 
 .header-caption {
   max-width: 143px;
@@ -154,6 +156,7 @@ body {
   font-family: "MyriadPro Semibold", sans-serif; }
 
 .header-btn-wrapper {
+  cursor: pointer;
   position: relative;
   width: 160px;
   height: 45px; }
@@ -172,6 +175,7 @@ body {
     background: linear-gradient(to bottom, #ffdc00 49%, #ffc300 50%); }
 
 .header-btn {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -312,6 +316,7 @@ body {
     font-weight: lighter; }
 
 .container-btn-wrapper {
+  cursor: pointer;
   position: relative;
   width: 230px;
   height: 65px; }
@@ -330,6 +335,7 @@ body {
     background: linear-gradient(to bottom, #ffdc00 49%, #ffc300 50%); }
 
 .container-btn {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -526,6 +532,7 @@ input {
   font-family: "MyriadPro Bold", sans-serif; }
 
 .main-btn-wrapper {
+  cursor: pointer;
   position: relative;
   width: 230px;
   height: 45px;
@@ -545,6 +552,7 @@ input {
     background: linear-gradient(to bottom, #ffdc00 49%, #ffc300 50%); }
 
 .main-btn {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -575,17 +583,70 @@ input {
   background: -moz-linear-gradient(left, #f4da7d 0%, #ecb931 50%, #f4da7d 100%);
   background: -webkit-linear-gradient(left, #f4da7d 0%, #ecb931 50%, #f4da7d 100%);
   background: linear-gradient(to right, #f4da7d 0%, #ecb931 50%, #f4da7d 100%);
-  -webkit-box-shadow: 0 0 30px 5px rgba(55, 45, 95, 0.5);
-  -moz-box-shadow: 0 0 30px 5px rgba(55, 45, 95, 0.5);
-  box-shadow: 0 0 30px 5px rgba(55, 45, 95, 0.5); }
+  -webkit-box-shadow: 0 0 30px 0 rgba(130, 48, 241, 0.5);
+  -moz-box-shadow: 0 0 30px 0 rgba(130, 48, 241, 0.5);
+  box-shadow: 0 0 30px 0 rgba(130, 48, 241, 0.5); }
 
-.roulette__box {
+.roulette-wrapper {
   width: 100%;
+  position: relative;
+  overflow: hidden;
   height: 130px;
   background: #313131;
   background: -moz-linear-gradient(top, #313131 0%, #363636 50%, #313131 100%);
   background: -webkit-linear-gradient(top, #313131 0%, #363636 50%, #313131 100%);
   background: linear-gradient(to top, #313131 0%, #363636 50%, #313131 100%); }
+
+.roulette-list {
+  width: 100%;
+  height: 130px;
+  margin-left: -50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center; }
+
+.roulette-list .roulette-item:nth-child(odd) {
+  min-width: 100px;
+  min-height: 100px;
+  background: url("../assets/pictures/png/casino_guide.png") no-repeat 50% 50%;
+  background-size: cover;
+  margin-right: 10px; }
+.roulette-list .roulette-item:nth-child(even) {
+  position: relative;
+  min-width: 15px;
+  min-height: 15px;
+  background: #1e1e1e;
+  margin-right: 10px;
+  border-radius: 50%; }
+  .roulette-list .roulette-item:nth-child(even):before {
+    position: absolute;
+    top: -45px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    content: '';
+    background: #edba2f;
+    background-image: -moz-radial-gradient(center, ellipse cover, #edba2f 0%, #f3d166 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #edba2f 0%, #f3d166 100%);
+    background: radial-gradient(ellipse at center, #edba2f 0%, #f3d166 100%);
+    -webkit-box-shadow: 0 0 20px 0 #f3d166;
+    -moz-box-shadow: 0 0 20px 0 #f3d166;
+    box-shadow: 0 0 20px 0 #f3d166; }
+  .roulette-list .roulette-item:nth-child(even):after {
+    position: absolute;
+    bottom: -45px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    content: '';
+    background: #edba2f;
+    background-image: -moz-radial-gradient(center, ellipse cover, #edba2f 0%, #f3d166 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #edba2f 0%, #f3d166 100%);
+    background: radial-gradient(ellipse at center, #edba2f 0%, #f3d166 100%);
+    -webkit-box-shadow: 0 0 20px 0 #f3d166;
+    -moz-box-shadow: 0 0 20px 0 #f3d166;
+    box-shadow: 0 0 20px 0 #f3d166; }
 
 .main__container {
   position: relative;
