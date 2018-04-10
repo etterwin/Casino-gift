@@ -25,13 +25,7 @@ $(document).ready(function () {
 
         let country = navigator.language || navigator.browserLanguage; // Определяем геопозицию юзера, чтобы определить параметры Select и наполнить нужным контентом страницу
 
-        if (country === 'ru') { // Если регион РФ
-            if (arrOfOptions[i].value === 'rus') {
-                $('.header-item:eq(0)').attr('selected', true);
-                $('#flag').attr('src', 'assets/pictures/png/rus_flag.png');
-            }
-        }
-        else if (country === 'de') { // Если это Германия
+        if (country === 'de') { // Если это Германия
             if (arrOfOptions[i].value === 'deu') {
                 $('.header-item:eq(1)').attr('selected', true);
                 $('#flag').attr('src', 'assets/pictures/png/germany_flag.png');
@@ -43,7 +37,12 @@ $(document).ready(function () {
                 $('#flag').attr('src', 'assets/pictures/png/italy_flag.png');
             }
         }
-        // Но что делать, если ни один из них?
+        else { // Если регион РФ или любой другой
+            if (arrOfOptions[i].value === 'rus') {
+                $('.header-item:eq(0)').attr('selected', true);
+                $('#flag').attr('src', 'assets/pictures/png/rus_flag.png');
+            }
+        }
     }
 
 });
@@ -113,3 +112,10 @@ $(document).ready(function () {
 });
 
 //----------------------------------------------------------------------------------------------------------------------
+
+function chooseCasino() {
+  $('.roulette-list').addClass('roulette-list--action');
+  setTimeout(function(){
+    $('.roulette-list').removeClass('roulette-list--action');
+  }, 2000);
+}
