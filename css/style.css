@@ -536,7 +536,7 @@ input {
   position: relative;
   width: 230px;
   height: 45px;
-  margin-top: 20px; }
+  margin-top: 40px; }
   .main-btn-wrapper:before {
     position: absolute;
     content: '';
@@ -576,6 +576,7 @@ input {
   width: 300px;
   height: 50px; }
 .roulette__container:nth-child(4) {
+  position: relative;
   width: 300px;
   height: 150px;
   padding: 10px;
@@ -586,6 +587,16 @@ input {
   -webkit-box-shadow: 0 0 30px 0 rgba(130, 48, 241, 0.5);
   -moz-box-shadow: 0 0 30px 0 rgba(130, 48, 241, 0.5);
   box-shadow: 0 0 30px 0 rgba(130, 48, 241, 0.5); }
+  .roulette__container:nth-child(4):after {
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 25px);
+    content: '';
+    width: 50px;
+    height: 50px;
+    transform: scale(-1, -1);
+    background: url("../assets/pictures/svg/maps-and-flags.svg") no-repeat 50% 50%;
+    background-size: 50px 50px; }
 
 .roulette-wrapper {
   width: 100%;
@@ -613,17 +624,16 @@ input {
   0% {
     margin-left: -45px; }
   80% {
-    margin-left: -1005px; }
+    margin-left: -1945px; }
   90% {
-    margin-left: -980px; }
+    margin-left: -1925px; }
   100% {
-    margin-left: -990px; } }
+    margin-left: -1935px; } }
 .roulette-list .roulette-item:nth-child(odd) {
   min-width: 100px;
   min-height: 100px;
-  background: url("../assets/pictures/png/casino_guide.png") no-repeat 50% 50%;
-  background-size: cover;
-  margin-right: 10px; }
+  margin-right: 10px;
+  border-radius: 50%; }
 .roulette-list .roulette-item:nth-child(even) {
   position: relative;
   min-width: 15px;
@@ -660,6 +670,9 @@ input {
     -moz-box-shadow: 0 0 20px 0 #f3d166;
     box-shadow: 0 0 20px 0 #f3d166; }
 
+.roulette-item-img {
+  width: 100%; }
+
 .main__container {
   position: relative;
   padding: 15px;
@@ -672,7 +685,7 @@ input {
 
 .main-text {
   font-size: 20px; }
-  .main-text:nth-child(3) {
+  .main-text:nth-child(4) {
     margin: 15px auto 35px; }
 
 .main-caption {

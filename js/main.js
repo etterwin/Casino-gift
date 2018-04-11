@@ -113,9 +113,24 @@ $(document).ready(function () {
 
 //----------------------------------------------------------------------------------------------------------------------
 
+// Мувы с выбором казино
 function chooseCasino() {
-  $('.roulette-list').addClass('roulette-list--action');
-  setTimeout(function(){
-    $('.roulette-list').removeClass('roulette-list--action');
-  }, 2000);
+
+    // Вставить рандомную картинку из массива в итоговый тег
+    let arrImg = ['assets/pictures/png/casino_azino.png', 'assets/pictures/png/casino_babe.png',
+        'assets/pictures/png/casino_guide.png', 'assets/pictures/png/casino_hard.png',
+        'assets/pictures/png/casino_joy.png', 'assets/pictures/png/casino_vulkan.png'];
+    let srcImg = arrImg[Math.floor(Math.random() * arrImg.length)];
+    $('#roulette-img').attr('src', srcImg);
+    $('#result-img').attr('src', srcImg);
+
+    $('.roulette-list').addClass('roulette-list--action');
+    setTimeout(function () {
+        let destination = $('#anchor_2').offset().top; // Скролл к результату
+        $('html').animate({
+                scrollTop: destination
+            }
+            , 600);
+        return false;
+    }, 1800);
 }

@@ -631,7 +631,7 @@ input {
   position: relative;
   width: 230px;
   height: 45px;
-  margin-top: 20px;
+  margin-top: 40px;
   &:before {
     position: absolute;
     content: '';
@@ -674,9 +674,9 @@ input {
   &:nth-child(2) {
     width: 300px;
     height: 50px;
-
   }
   &:nth-child(4) {
+    position: relative;
     width: 300px;
     height: 150px;
     padding: 10px;
@@ -687,6 +687,17 @@ input {
     -webkit-box-shadow: 0 0 30px 0 rgba(130,48,241,.5);
     -moz-box-shadow: 0 0 30px 0 rgba(130,48,241,.5);
     box-shadow: 0 0 30px 0 rgba(130,48,241,.5);
+    &:after {
+      position: absolute;
+      bottom: -10px;
+      left: calc(50% - 25px);
+      content: '';
+      width: 50px;
+      height: 50px;
+      transform: scale(-1,-1);
+      background: url("../assets/pictures/svg/maps-and-flags.svg") no-repeat 50% 50%;
+      background-size: 50px 50px;
+    }
   }
 }
 
@@ -720,13 +731,13 @@ input {
     margin-left: -45px;
   }
   80%{
-    margin-left: -1005px;
+    margin-left: -1945px;
   }
   90% {
-    margin-left: -980px;
+    margin-left: -1925px;
   }
   100% {
-    margin-left: -990px;
+    margin-left: -1935px;
   }
 }
 
@@ -734,9 +745,8 @@ input {
   &:nth-child(odd) {
     min-width: 100px;
     min-height: 100px;
-    background: url("../assets/pictures/png/casino_guide.png") no-repeat 50% 50%;
-    background-size: cover;
     margin-right: 10px;
+    border-radius: 50%;
   }
   &:nth-child(even) {
     position: relative;
@@ -778,6 +788,10 @@ input {
   }
 }
 
+.roulette-item-img {
+  width: 100%;
+}
+
 .main__container {
   position: relative;
   padding: 15px;
@@ -791,7 +805,7 @@ input {
 
 .main-text {
   font-size: 20px;
-  &:nth-child(3) {
+  &:nth-child(4) {
     margin: 15px auto 35px;
   }
 }
