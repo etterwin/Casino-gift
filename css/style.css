@@ -574,7 +574,8 @@ input {
 
 .roulette__container:nth-child(2) {
   width: 300px;
-  height: 50px; }
+  height: 300px;
+  position: relative; }
 .roulette__container:nth-child(4) {
   position: relative;
   width: 300px;
@@ -597,6 +598,33 @@ input {
     transform: scale(-1, -1);
     background: url("../assets/pictures/svg/maps-and-flags.svg") no-repeat 50% 50%;
     background-size: 50px 50px; }
+
+.roulette-img {
+  position: absolute; }
+  .roulette-img:first-child {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  .roulette-img:nth-child(2) {
+    width: calc(100% - 70px);
+    top: 35px;
+    left: 35px;
+    z-index: 2; }
+
+.roulette-btn {
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  top: calc(50% - 17px);
+  left: calc(50% - 37.5px);
+  text-transform: uppercase;
+  font-family: "MyriadPro Bold", sans-serif;
+  background: linear-gradient(0deg, #9c0606 33%, #da0909 66%, #9c0606);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  font-size: 28px; }
 
 .roulette-wrapper {
   width: 100%;
