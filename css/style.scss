@@ -712,11 +712,11 @@ input {
 }
 
 .roulette-list--action {
-  animation: ScrollRoulette 2s ease-in-out forwards;
+  animation: ScrollRoulette 1.5s ease-in-out forwards;
 }
 
 @keyframes ScrollRoulette {
-  30% {
+  0% {
     margin-left: -45px;
   }
   80%{

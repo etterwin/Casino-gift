@@ -607,10 +607,10 @@ input {
   align-items: center; }
 
 .roulette-list--action {
-  animation: ScrollRoulette 2s ease-in-out forwards; }
+  animation: ScrollRoulette 1.5s ease-in-out forwards; }
 
 @keyframes ScrollRoulette {
-  30% {
+  0% {
     margin-left: -45px; }
   80% {
     margin-left: -1005px; }
