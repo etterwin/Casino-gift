@@ -156,3 +156,30 @@ function chooseCasino() {
         return false;
     }, 1800);
 }
+
+//----------------------------------------------------------------------------------------------------------------------
+
+// Крутануть еще разок, испытать удачу
+function refreshWheel() {
+
+    let destination = 50 + $('#anchor_4').offset().top; // Скролл к следующей рулетке
+    $('html').animate({
+            scrollTop: destination
+        }, 600);
+
+    setTimeout(function () {
+
+        $('#wheel').addClass('wheel--refresh'); // Добавление класса для поворота
+        $('.footer-link').css({display: 'none'});
+
+        setTimeout(function () {
+            $('#result-text').text('3000 бонусов');
+            let destination = 50 + $('#anchor_3').offset().top; // Скролл к следующей рулетке
+            $('html').animate({
+                scrollTop: destination
+            }, 600);
+        },1500)
+
+    },1000);
+
+}

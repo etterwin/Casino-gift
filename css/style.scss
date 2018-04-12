@@ -777,6 +777,49 @@ input {
   }
 }
 
+.wheel--refresh {
+  animation: refreshWheel 1s ease-in-out forwards;
+}
+
+@keyframes refreshWheel {
+  3% {
+    transform: rotate(5deg);
+  }
+  5% {
+    transform: rotate(5deg);
+  }
+  25% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(720deg);
+  }
+  65% {
+    transform: rotate(1080deg);
+  }
+  70% {
+    transform: rotate(1190deg);
+  }
+  75% {
+    transform: rotate(1200deg);
+  }
+  80% {
+    transform: rotate(1210deg);
+  }
+  85% {
+    transform: rotate(1220deg);
+  }
+  90% {
+    transform: rotate(1240deg);
+  }
+  95% {
+    transform: rotate(1250deg);
+  }
+  100% {
+    transform: rotate(1260deg);
+  }
+}
+
 .roulette-btn {
   cursor: pointer;
   position: absolute;
