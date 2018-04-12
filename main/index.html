@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CASINO Gifts</title>
+
+    <!-- style -->
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <!-- scripts and library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+</head>
+<body>
+
+<header class="header">
+
+    <!-- Блок с логотипом и выбором языка -->
+    <section class="header__container">
+        <div class="header-wrapper">
+            <a href="#" class="header-logo-link">
+                <img src="assets/pictures/png/Logo.png" class="header-logo"/>
+            </a>
+
+            <!-- Выпадающий список с выбором языков -->
+            <div class="header__dropdown">
+                <label for="header-select" class="header-label">
+                    <img src="" id="flag" class="header-icon"/>
+                </label>
+                <select id="header-select" class="header-list">
+                    <option class="header-item" value="rus" selected>rus</option>
+                    <option class="header-item" value="deu">deu</option>
+                    <option class="header-item" value="ita">ita</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок с мадам, текстом и кнопкой-якорем -->
+    <section class="header__container">
+        <div class="header-wrapper">
+
+            <h1 class="header-caption" id="caption_1">Получите
+                <span class="header-caption--bold">бесплатные</span>
+                <span class="header-caption--big">бонусы</span> во
+                <span class="header-caption--big">всех</span>
+                <span class="header-caption--wide">казино!</span>
+            </h1>
+
+            <p class="header-text" id="text_1">
+                Также как
+                <span class="header-text--yellow">кэшбек</span>
+                мы
+                <span class="header-text--yellow">сотрудничаем</span>
+                с казино, которые
+                <span class="header-text--yellow">эксклюзивно</span>
+                предоставляют
+                <br/><span class="header-text--yellow">бонусы</span>
+            </p>
+
+            <div class="header-btn-wrapper">
+                <!-- Линк на первый якорь -->
+                <a href="#anchor_1" id="start" class="header-btn">Получить бонус!</a>
+            </div>
+
+        </div>
+    </section>
+
+</header>
+
+<div class="wrapper">
+
+    <div class="container">
+
+        <span id="anchor_1"> </span> <!-- Первый якорь -->
+        <h2 class="container-caption" id="caption_2">Как это работает?</h2>
+
+        <section class="box">
+            <img src="assets/pictures/png/body_one_1.png" class="box-img"/>
+            <p class="box-text" id="text_2">Вам доступно
+                <span class="box-text--yellow">бесплатное вращение</span></p>
+        </section>
+
+        <section class="box">
+            <img src="assets/pictures/png/body_one_2.png" class="box-img"/>
+            <p class="box-text" id="text_3">После
+                <span class="box-text--yellow">вращения</span>
+                вы получаете один
+                <span class="box-text--yellow">случайный бонус</span>
+                , которым можно воспользоваться</p>
+        </section>
+
+        <section class="box">
+            <img src="assets/pictures/png/body_one_3.png" class="box-img"/>
+            <p class="box-text" id="text_4">Для
+                <span class="box-text--yellow">повторного вращения</span>
+                вам нужно
+                <span class="box-text--yellow">зарегестрироваться</span></p>
+        </section>
+
+    </div>
+
+    <div class="container">
+
+        <section class="box">
+            <img src="assets/pictures/svg/medal-of-award.svg" class="box-icon"/>
+            <h3 class="box-caption" id="caption_3">Бонусы</h3>
+            <p class="box-text" id="num_1"> </p>
+        </section>
+
+        <section class="box">
+            <img src="assets/pictures/svg/male-user-shadow.svg" class="box-icon"/>
+            <h3 class="box-caption" id="caption_4">Пользователей</h3>
+            <p class="box-text" id="num_2"> </p>
+        </section>
+
+        <section class="box">
+            <img src="assets/pictures/svg/icon.svg" class="box-icon"/>
+            <h3 class="box-caption" id="caption_5">Онлайн</h3>
+            <p class="box-text" id="num_3"> </p>
+        </section>
+
+    </div>
+
+    <div class="container">
+
+        <section class="box">
+            <img src="assets/pictures/svg/security-shield.svg" class="box-icon"/>
+            <h3 class="box-caption" id="caption_6">Безопасно</h3>
+            <p class="box-text" id="text_5">Мы используем 256 битный сертификат, который защищает ваши транзакции и
+                авторизации на сайте. С нами вы будете в безопасности</p>
+        </section>
+
+        <section class="box">
+            <img src="assets/pictures/png/icon_heart.png" class="box-icon"/>
+            <h3 class="box-caption" id="caption_7">Честно</h3>
+            <p class="box-text" id="text_6">Система CASINO gifts основана на алгоритме, который определяет число с
+                учетом коэффициента и случайной генерации числа 0-100</p>
+        </section>
+
+        <section class="box">
+            <img src="assets/pictures/svg/speedometer.svg" class="box-icon"/>
+            <h3 class="box-caption" id="caption_8">Моментально</h3>
+            <p class="box-text" id="text_7">Вы получите свой выигрыш моментально на баланс системы</p>
+        </section>
+
+        <div class="container-btn-wrapper">
+            <a href="next.html"  id="btn_1" class="container-btn">Получить бонус!</a>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <h2 class="container-caption" id="caption_9">Наши партнёры</h2>
+
+        <!-- Карусель -->
+        <article id="slider">
+
+            <input checked type='radio' name='slider' id='slide1'/>
+            <input type='radio' name='slider' id='slide2'/>
+            <input type='radio' name='slider' id='slide3'/>
+
+            <div id="slides">
+                <div id="container">
+                    <div class="inner">
+
+                        <article class="slider-wrapper">
+                            <div class="slide-container">
+                                <img src="assets/pictures/png/1.png" class="slide-img" />
+                            </div>
+                            <div class="slide-container">
+                                <img src="assets/pictures/png/2.png" class="slide-img" />
+                            </div>
+                            <div class="slide-container">
+                                <img src="assets/pictures/png/3.png" class="slide-img" />
+                            </div>
+                            <div class="slide-container">
+                                <img src="assets/pictures/png/4.png" class="slide-img" />
+                            </div>
+                        </article>
+                        <article class="slider-wrapper">
+                            <div class="slide-container">
+                                <img src="assets/pictures/png/5.png" class="slide-img" />
+                            </div>
+                            <div class="slide-container">
+                                <img src="assets/pictures/png/6.png" class="slide-img" />
+                            </div>
+                            <div class="slide-container">
+                                <img src="assets/pictures/png/7.png" class="slide-img" />
+                            </div>
+                            <div class="slide-container">
+                                <img src="assets/pictures/png/8.png" class="slide-img" />
+                            </div>
+                        </article>
+                        <article class="slider-wrapper">
+                            <div class="slide-container">
+                                <img src="assets/pictures/png/9.png" class="slide-img" />
+                            </div>
+                            <div class="slide-container">
+                                <img src="assets/pictures/png/10.png" class="slide-img" />
+                            </div>
+                            <div class="slide-container">
+                                <img src="assets/pictures/png/11.png" class="slide-img" />
+                            </div>
+                            <div class="slide-container">
+                                <img src="assets/pictures/png/12.png" class="slide-img" />
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="commands">
+                <label for='slide1'></label>
+                <label for='slide2'></label>
+                <label for='slide3'></label>
+            </div>
+            <div id="active">
+                <label for='slide1'></label>
+                <label for='slide2'></label>
+                <label for='slide3'></label>
+            </div>
+
+        </article>
+        <!-- end -->
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

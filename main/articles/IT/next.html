@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Regali del nostro CASINÒ</title>
+
+    <!-- style -->
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <!-- scripts and library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<span id="anchor_4"></span>
+
+<header class="header-next">
+
+    <!-- Блок с логотипом и выбором языка -->
+    <section class="header__container">
+        <div class="header-wrapper">
+            <a href="#" class="header-logo-link">
+                <img src="assets/pictures/png/Logo.png" class="header-logo"/>
+            </a>
+
+            <!-- Выпадающий список с выбором языков -->
+            <div class="header__dropdown">
+                <label for="header-select" class="header-label">
+                    <img src="" id="flag" class="header-icon"/>
+                </label>
+                <select id="header-select" class="header-list">
+                    <option class="header-item" value="rus">rus</option>
+                    <option class="header-item" value="deu">deu</option>
+                    <option class="header-item" value="ita" selected>ita</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+</header>
+
+<main class="main">
+
+    <section class="roulette">
+        <h1 class="roulette-caption" id="caption_10">Prendi il tuo bonus</h1>
+
+        <div class="roulette__container">
+            <img src="assets/pictures/png/wheel_down.png" class="roulette-img" />
+            <img src="assets/pictures/png/wheel_up.png" id="wheel" class="roulette-img" />
+            <a class="roulette-btn" id="btn_2" onclick="moveWheel(this)">stampa!</a>
+            <span id="anchor_2"></span>
+        </div>
+
+        <h2 class="roulette-caption" id="caption_11">Scegli un casinò</h2>
+
+        <!-- Крутящийся вдоль блок с казино -->
+        <div class="roulette__container">
+            <div class="roulette-wrapper">
+                <ul class="roulette-list">
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/2.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/1.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/4.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/3.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/6.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/5.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/7.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/8.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/10.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/9.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/12.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/11.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/6.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/2.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/9.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/7.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/1.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/4.png" class="roulette-item-img" /></li>
+                    <li class="roulette-item"></li>
+                    <li class="roulette-item">
+                        <img src="assets/pictures/png/11.png" class="roulette-item-img" /></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-btn-wrapper">
+            <a id="roulette-btn" class="main-btn" onclick="chooseCasino(this)">Punta</a>
+        </div>
+
+    </section>
+
+    <div class="main__container">
+
+        <span id="anchor_3"></span>
+        <p class="main-text" id="text_8">Hai:</p>
+        <h3 id="result-text" class="main-caption"></h3>
+        <p class="main-text" id="text_9">Il tuo casinò:</p>
+
+        <div class="main-img-wrapper">
+            <img src="" id="result-img" class="main-img" />
+        </div>
+
+    </div>
+
+    <div class="main-btn-wrapper">
+        <a class="main-btn" id="btn_3">Ottieni un bonus</a>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <span class="footer-text" id="text_10">* Funziona solo sull’app mobile</span>
+    <a class="footer-link" id="btn_4" onclick="refreshWheel(this)">Ottieni +1 puntata gratis</a>
+</footer>
+
+</body>
+</html>
