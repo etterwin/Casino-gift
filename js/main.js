@@ -113,10 +113,43 @@ $(document).ready(function () {
 
 //----------------------------------------------------------------------------------------------------------------------
 
-// Мувы с рулеткой
+// Мувы с колесом
 function moveWheel() {
-    $('#wheel').addClass('wheel--action');
+
+    let arrDeg = [90, 180, 270, 360]; // Массив с поворотом колеса рулетки
+    let deg = arrDeg[Math.floor(Math.random() * arrDeg.length)];
+
+    if (deg === 90) { // Динамически изменяем содержание результата по условиям
+        $('#result-text').text('300 спинов');
+    }
+    else if (deg === 180) {
+        $('#result-text').text('3000 бонусов');
+    }
+    else if (deg === 270) {
+        $('#result-text').text('1 шанс');
+    }
+    else {
+        $('#result-text').text('x2');
+    }
+
+    $('#wheel').css({transform: 'rotate(' + deg + 'deg)'}); // Поворот
+
+    setTimeout(function () {
+
+        $('.roulette-btn').css({cursor: 'default'}); // Убрать свойство при наведении
+        $('.roulette-btn').removeAttr('onclick'); // И атрибут с функцией
+
+        let destination = 50 + $('#anchor_2').offset().top; // Скролл к следующей рулетке
+        $('html').animate({
+                scrollTop: destination
+            }
+            , 600);
+        return false;
+
+    },600);
 }
+
+//----------------------------------------------------------------------------------------------------------------------
 
 // Мувы с выбором казино
 function chooseCasino() {
@@ -126,14 +159,20 @@ function chooseCasino() {
         'assets/pictures/png/casino_guide.png', 'assets/pictures/png/casino_hard.png',
         'assets/pictures/png/casino_joy.png', 'assets/pictures/png/casino_vulkan.png'];
     let srcImg = arrImg[Math.floor(Math.random() * arrImg.length)];
-    $('#roulette-img').attr('src', srcImg);
+
+    $('#roulette-img').attr('src', srcImg); // Добавляем рандомную картинку в рулетку и итог
     $('#result-img').attr('src', srcImg);
 
     $('.roulette-list').addClass('roulette-list--action');
     setTimeout(function () {
-        let destination = $('#anchor_2').offset().top; // Скролл к результату
+
+        let destination = $('#anchor_3').offset().top; // Скролл к результату
+
+        $('#roulette-btn').css({cursor: 'default'}); // Убрать свойство при наведении
+        $('#roulette-btn').removeAttr('onclick'); // И атрибут с функцией
+
         $('html').animate({
-                scrollTop: destination
+                scrollTop: destination // Скролл на результат
             }
             , 600);
         return false;
