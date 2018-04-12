@@ -29,6 +29,7 @@ $(document).ready(function () {
             if (arrOfOptions[i].value === 'deu') {
                 $('.header-item:eq(1)').attr('selected', true);
                 $('#flag').attr('src', 'assets/pictures/png/germany_flag.png');
+                rusLang();
             }
         }
         else if (country === 'it') { // Или италия

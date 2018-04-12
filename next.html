@@ -45,16 +45,16 @@
 <main class="main">
 
     <section class="roulette">
-        <h1 class="roulette-caption">Забери свой бонус</h1>
+        <h1 class="roulette-caption" id="caption_10">Забери свой бонус</h1>
 
         <div class="roulette__container">
             <img src="assets/pictures/png/wheel_down.png" class="roulette-img" />
             <img src="assets/pictures/png/wheel_up.png" id="wheel" class="roulette-img" />
-            <a class="roulette-btn" onclick="moveWheel(this)">жми!</a>
+            <a class="roulette-btn" id="btn_2" onclick="moveWheel(this)">жми!</a>
             <span id="anchor_2"></span>
         </div>
 
-        <h2 class="roulette-caption">Выбери казино</h2>
+        <h2 class="roulette-caption" id="caption_11">Выбери казино</h2>
 
         <!-- Крутящийся вдоль блок с казино -->
         <div class="roulette__container">
@@ -129,9 +129,9 @@
     <div class="main__container">
 
         <span id="anchor_3"></span>
-        <p class="main-text">Вам доступно:</p>
+        <p class="main-text" id="text_8">Вам доступно:</p>
         <h3 id="result-text" class="main-caption"></h3>
-        <p class="main-text">Ваше казино:</p>
+        <p class="main-text" id="text_9">Ваше казино:</p>
 
         <div class="main-img-wrapper">
             <img src="" id="result-img" class="main-img" />
@@ -140,14 +140,14 @@
     </div>
 
     <div class="main-btn-wrapper">
-        <a class="main-btn">Забрать бонус</a>
+        <a class="main-btn" id="btn_3">Забрать бонус</a>
     </div>
 
 </main>
 
 <footer class="footer">
-    <span class="footer-text">*Действует только в мобильном приложении</span>
-    <a class="footer-link" onclick="refreshWheel(this)">Получить дополнительное бесплатное вращение</a>
+    <span class="footer-text" id="text_10">*Действует только в мобильном приложении</span>
+    <a class="footer-link" id="btn_4" onclick="refreshWheel(this)">Получить дополнительное бесплатное вращение</a>
 </footer>
 
 </body>
