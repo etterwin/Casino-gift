@@ -58,13 +58,15 @@ body {
     background: #1e1c42; }
   .header .header__container:last-child {
     height: 400px;
+    max-width: 500px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     background: url("../assets/pictures/png/header_bg.png") no-repeat 50% 50%;
     background-size: 100%; }
   .header .header__container:first-child .header-wrapper {
-    max-width: 1200px;
+    max-width: 500px;
     width: 100%;
     margin: 0 auto;
     padding: 10px 20px;
@@ -82,7 +84,7 @@ body {
   background: #1e1c42; }
 
 .header-next .header__container .header-wrapper {
-  max-width: 1200px;
+  max-width: 500px;
   width: 100%;
   margin: 0 auto;
   padding: 10px 20px;
@@ -198,7 +200,7 @@ body {
 /*end*/
 /*main*/
 .wrapper {
-  max-width: 1200px;
+  max-width: 500px;
   width: 100%;
   position: relative;
   margin: 0 auto; }
@@ -509,7 +511,7 @@ input {
 /*end*/
 /*next main*/
 .main {
-  max-width: 1200px;
+  max-width: 500px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -537,7 +539,7 @@ input {
   position: relative;
   width: 230px;
   height: 45px;
-  margin-top: 40px; }
+  margin-top: 20px; }
   .main-btn-wrapper:before {
     position: absolute;
     content: '';
@@ -625,6 +627,34 @@ input {
     z-index: 2;
     transition: all .6s ease-in-out; }
 
+.wheel--active {
+  animation: rotateWheel 1s ease-in-out forwards; }
+
+@keyframes rotateWheel {
+  3% {
+    transform: rotate(5deg); }
+  5% {
+    transform: rotate(5deg); }
+  25% {
+    transform: rotate(360deg); }
+  50% {
+    transform: rotate(720deg); }
+  65% {
+    transform: rotate(1080deg); }
+  70% {
+    transform: rotate(1100deg); }
+  75% {
+    transform: rotate(1110deg); }
+  80% {
+    transform: rotate(1120deg); }
+  85% {
+    transform: rotate(1130deg); }
+  90% {
+    transform: rotate(1150deg); }
+  95% {
+    transform: rotate(1160deg); }
+  100% {
+    transform: rotate(1170deg); } }
 .roulette-btn {
   cursor: pointer;
   position: absolute;
@@ -674,7 +704,13 @@ input {
   min-width: 100px;
   min-height: 100px;
   margin-right: 10px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  background: black;
+  border: 2px solid #ffe100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
 .roulette-list .roulette-item:nth-child(even) {
   position: relative;
   min-width: 15px;
@@ -712,7 +748,7 @@ input {
     box-shadow: 0 0 20px 0 #f3d166; }
 
 .roulette-item-img {
-  width: 100%; }
+  width: 90%; }
 
 .main__container {
   position: relative;
@@ -738,8 +774,14 @@ input {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  background: black;
+  border: 2px solid #ffe100;
   bottom: -40px;
-  left: calc(50% - 40px); }
+  left: calc(50% - 40px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
 
 .main-img {
   width: 100%; }

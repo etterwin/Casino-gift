@@ -116,23 +116,7 @@ $(document).ready(function () {
 // Мувы с колесом
 function moveWheel() {
 
-    let arrDeg = [90, 180, 270, 360]; // Массив с поворотом колеса рулетки
-    let deg = arrDeg[Math.floor(Math.random() * arrDeg.length)];
-
-    if (deg === 90) { // Динамически изменяем содержание результата по условиям
-        $('#result-text').text('300 спинов');
-    }
-    else if (deg === 180) {
-        $('#result-text').text('3000 бонусов');
-    }
-    else if (deg === 270) {
-        $('#result-text').text('1 шанс');
-    }
-    else {
-        $('#result-text').text('x2');
-    }
-
-    $('#wheel').css({transform: 'rotate(' + deg + 'deg)'}); // Поворот
+    $('#wheel').addClass('wheel--active'); // Добавление класса для поворота
 
     setTimeout(function () {
 
@@ -146,22 +130,13 @@ function moveWheel() {
             , 600);
         return false;
 
-    },600);
+    },1200);
 }
 
 //----------------------------------------------------------------------------------------------------------------------
 
 // Мувы с выбором казино
 function chooseCasino() {
-
-    // Вставить рандомную картинку из массива в итоговый тег
-    let arrImg = ['assets/pictures/png/casino_azino.png', 'assets/pictures/png/casino_babe.png',
-        'assets/pictures/png/casino_guide.png', 'assets/pictures/png/casino_hard.png',
-        'assets/pictures/png/casino_joy.png', 'assets/pictures/png/casino_vulkan.png'];
-    let srcImg = arrImg[Math.floor(Math.random() * arrImg.length)];
-
-    $('#roulette-img').attr('src', srcImg); // Добавляем рандомную картинку в рулетку и итог
-    $('#result-img').attr('src', srcImg);
 
     $('.roulette-list').addClass('roulette-list--action');
     setTimeout(function () {
@@ -170,6 +145,9 @@ function chooseCasino() {
 
         $('#roulette-btn').css({cursor: 'default'}); // Убрать свойство при наведении
         $('#roulette-btn').removeAttr('onclick'); // И атрибут с функцией
+
+        $('#result-img').attr('src', 'assets/pictures/png/7.png');
+        $('#result-text').text('300 спинов');
 
         $('html').animate({
                 scrollTop: destination // Скролл на результат
